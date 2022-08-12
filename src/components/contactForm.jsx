@@ -26,11 +26,21 @@ function ContactForm() {
     });
 
     const onSubmit = (data) => {
-        console.log(data.phone.length);
+        console.log(data);
         alert(`Thank you, ${data.name}. We will soon reach out to you`);
         setValue('name', '');
         setValue('email', '');
         setValue('message', '');
+        setValue('countryCode', '');
+        setValue('phone', '');
+        setValue('street', '');
+        setValue('number', '');
+        setValue('city', '');
+        setValue('state', '');
+        setValue('zipcode', '');
+        setValue('password', '');
+        setValue('confirmPassword', '');
+        setValue('country', '');
     }
 
     return (
